@@ -1420,11 +1420,16 @@ body.is-preload #bg:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5.5rem;
-  height: 5.5rem;
-  line-height: 5.5rem;
+  width: 15rem;
+  height: 15rem;
+  line-height: 15rem;
   border: solid 1px #ffffff;
   border-radius: 100%;
+}
+
+#header .logo img {
+	width: 100%;
+	border-radius: 100%;
 }
 
 #header .logo .fas {
@@ -1482,7 +1487,7 @@ body.is-preload #bg:before {
 
 #header nav ul li {
   padding-left: 0;
-  border-left: solid 1px #ffffff;
+	border-left: solid 1px #ffffff;
 }
 
 #header nav ul li:first-child {
@@ -1498,15 +1503,18 @@ body.is-preload #bg:before {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
-  border-bottom: 0;
+	border-bottom: 0;
+	transition: 0.5s ease;
 }
 
 #header nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: #fff;
+	color: black;
 }
 
 #header nav ul li a:active {
-  background-color: rgba(255, 255, 255, 0.175);
+  background-color: #fff;
+	color: indianred;
 }
 
 #header nav.use-middle:after {
@@ -1571,14 +1579,14 @@ body.is-preload #header .content .inner {
   }
 
   #header .logo {
-    width: 4.75rem;
-    height: 4.75rem;
-    line-height: 4.75rem;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
   }
 
   #header .logo .icon:before {
     font-size: 1.75rem;
-  }
+	}
 
   #header .content .inner {
     padding: 2.5rem 1rem;
@@ -1592,7 +1600,11 @@ body.is-preload #header .content .inner {
 @media screen and (max-width: 480px) {
   #header {
     padding: 1.5rem 0;
-  }
+	}
+	
+	#header .use-middle {
+		width: 80%;
+	}
 
   #header .content .inner {
     padding: 2.5rem 0;
